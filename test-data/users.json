@@ -1,0 +1,73 @@
+{
+    "validUsers": {
+      "standard": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+      },
+      "performance": {
+        "username": "performance_glitch_user",
+        "password": "secret_sauce"
+      },
+      "visual": {
+        "username": "visual_user",
+        "password": "secret_sauce"
+      }
+    },
+    "invalidUsers": {
+      "locked": {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "errorMessage": "Epic sadface: Sorry, this user has been locked out."
+      },
+      "problem": {
+        "username": "problem_user",
+        "password": "secret_sauce"
+      },
+      "error": {
+        "username": "error_user",
+        "password": "secret_sauce"
+      },
+      "invalidCredentials": {
+        "username": "invalid_user",
+        "password": "wrong_password",
+        "errorMessage": "Epic sadface: Username and password do not match any user in this service"
+      },
+      "emptyUsername": {
+        "username": "",
+        "password": "secret_sauce",
+        "errorMessage": "Epic sadface: Username is required"
+      },
+      "emptyPassword": {
+        "username": "standard_user",
+        "password": "",
+        "errorMessage": "Epic sadface: Password is required"
+      }
+    },
+    "customerInfo": {
+      "valid": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "postalCode": "12345"
+      },
+      "invalid": {
+        "emptyFirstName": {
+          "firstName": "",
+          "lastName": "Doe",
+          "postalCode": "12345",
+          "errorMessage": "Error: First Name is required"
+        },
+        "emptyLastName": {
+          "firstName": "John",
+          "lastName": "",
+          "postalCode": "12345",
+          "errorMessage": "Error: Last Name is required"
+        },
+        "emptyPostalCode": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "postalCode": "",
+          "errorMessage": "Error: Postal Code is required"
+        }
+      }
+    }
+  }

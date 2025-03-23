@@ -1,16 +1,33 @@
 {
-  "name": "playwright",
+  "name": "saucedemo-automation",
   "version": "1.0.0",
-  "description": "",
+  "description": "End-to-end test automation for SauceDemo website",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "lint": "eslint . --ext .ts",
+    "debug": "playwright test --debug",
+    "codegen": "playwright codegen https://www.saucedemo.com/"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "testing",
+    "e2e"
+  ],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "devDependencies": {
-    "@playwright/test": "^1.41.2",
+    "@playwright/test": "^1.51.1",
     "@types/node": "^20.11.19",
-    "dotenv": "^16.4.4"
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "dotenv": "^16.4.4",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
   }
 }
